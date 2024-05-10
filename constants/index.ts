@@ -20,7 +20,24 @@ export const homeNavLinks = [
     route: "#contact",  // ID for the Contact section
   },
 ];
-
+export const projects = [
+  {
+    title: "Our Mission",
+    description:
+      "Whether it's simplifying complex workflows, fostering collaboration, or driving technological advancements, we are dedicated to empowering businesses and life to thrive in the digital age.",
+  },
+  {
+    title: "Our Role",
+    description:
+      "Our role extends beyond being a service provider — we are your strategic partner in navigating the challenges and opportunities of the digital landscape.",
+  },
+  {
+    title: "Our Values",
+    description:
+      "We believe in pushing the boundaries of what's possible. Innovation is at the core of everything we do, driving us to create solutions that anticipate and meet the needs of tomorrow.",
+  },
+ 
+];
 // Navigation links for the sidebar
 export const navLinks = [
   {
