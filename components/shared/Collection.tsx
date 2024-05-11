@@ -119,7 +119,6 @@ const Card = ({ image }: { image: IImage }) => {
               ].icon
             }`}
             alt={image.title}
-            style={{ backgroundColor: image.bgColor }}
             width={34}
             height={24}
             className="p-1 rounded-md"
