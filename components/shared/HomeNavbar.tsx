@@ -9,7 +9,7 @@ const HomeNavbar = () => {
   return (
     <nav className="bg-black fixed w-full z-20 top-0 start-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
             src="/assets/images/logo.png"
             alt="logo"
@@ -19,7 +19,7 @@ const HomeNavbar = () => {
           <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
             SimplifyEfforts
           </span>
-              </a>
+              </Link>
               
 
         <div className="md:flex md:order-2 hidden space-x-3 rtl:space-x-reverse">

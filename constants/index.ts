@@ -1,25 +1,22 @@
 export const homeNavLinks = [
   {
     label: "Main",
-    route: "#main",  // ID for the About section
+    route: "#main", // ID for the About section
   },
   {
     label: "About",
-    route: "#about",  // ID for the About section
+    route: "#about", // ID for the About section
   },
   {
     label: "Features",
-    route: "#features",  // ID for the Features section
+    route: "#features", // ID for the Features section
   },
   {
     label: "Pricing",
-    route: "#pricing",  // ID for the Pricing section
-  },
-  {
-    label: "Contact",
-    route: "#contact",  // ID for the Contact section
+    route: "#pricing", // ID for the Pricing section
   },
 ];
+//About us section
 export const projects = [
   {
     title: "Our Mission",
@@ -36,7 +33,43 @@ export const projects = [
     description:
       "We believe in pushing the boundaries of what's possible. Innovation is at the core of everything we do, driving us to create solutions that anticipate and meet the needs of tomorrow.",
   },
- 
+];
+export const features = [
+  {
+    imageUrl: "/assets/icons/image.svg",
+    title: "Image Restore",
+    bgColor: "#fee2e2",
+    description:
+      "Restore damaged or corrupted images to their original condition using advanced algorithms and techniques to repair and enhance image quality.",
+  },
+  {
+    imageUrl: "/assets/icons/stars.svg",
+    title: "Generative Fill",
+    bgColor: "#dcfce7",
+    description:
+      "Fill in missing or incomplete parts of an image using generative AI models to generate realistic and seamless content based on the surrounding context.",
+  },
+  {
+    imageUrl: "/assets/icons/scan.svg",
+    title: "Object Remove",
+    bgColor: "#e0e7ff",
+    description:
+      "Remove unwanted objects or elements from an image using advanced object detection and masking techniques, leaving a clean and seamless background.",
+  },
+  {
+    imageUrl: "/assets/icons/filter.svg",
+    title: "Object Recolor",
+    bgColor: "#e9d5ff",
+    description:
+      "Change the color of specific objects or elements in an image using advanced image processing algorithms to precisely target and recolor desired areas.",
+  },
+  {
+    imageUrl: "/assets/icons/camera.svg",
+    title: "Background Remove",
+    bgColor: "#fefce8",
+    description:
+      "Remove the background from an image, leaving the subject isolated and ready for compositing or further editing, using advanced segmentation techniques.",
+  },
 ];
 // Navigation links for the sidebar
 export const navLinks = [
@@ -44,41 +77,49 @@ export const navLinks = [
     label: "Dashboard",
     route: "/dashboard",
     icon: "/assets/icons/home.svg",
+    bgColor: "rgba(219, 234, 254, var(--tw-bg-opacity))",
   },
   {
     label: "Image Restore",
     route: "/transformations/add/restore",
     icon: "/assets/icons/image.svg",
+    bgColor: "rgba(254, 226, 226, var(--tw-bg-opacity))",
   },
   {
     label: "Generative Fill",
     route: "/transformations/add/fill",
     icon: "/assets/icons/stars.svg",
+    bgColor: "rgba(220, 252, 231, var(--tw-bg-opacity))",
   },
   {
     label: "Object Remove",
     route: "/transformations/add/remove",
     icon: "/assets/icons/scan.svg",
+    bgColor: "rgba(224, 231, 255, var(--tw-bg-opacity))",
   },
   {
     label: "Object Recolor",
     route: "/transformations/add/recolor",
     icon: "/assets/icons/filter.svg",
+    bgColor: "rgba(233, 213, 255, var(--tw-bg-opacity))",
   },
   {
     label: "Background Remove",
     route: "/transformations/add/removeBackground",
     icon: "/assets/icons/camera.svg",
+    bgColor: "rgba(254, 252, 232, var(--tw-bg-opacity))",
   },
   {
     label: "Profile",
     route: "/profile",
     icon: "/assets/icons/profile.svg",
+    bgColor: "rgba(224, 231, 255, var(--tw-bg-opacity))",
   },
   {
     label: "Buy Credits",
     route: "/credits",
     icon: "/assets/icons/bag.svg",
+    bgColor: "rgba(220, 252, 231, var(--tw-bg-opacity))",
   },
 ];
 

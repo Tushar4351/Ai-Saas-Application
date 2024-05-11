@@ -15,11 +15,12 @@ const MobileNav = () => {
     <header className="header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
         <Image
-          src="/assets/images/logo-text.svg"
+          src="/assets/images/logo.png"
           alt="logo"
-          width={280}
-          height={28}
+          width={40}
+          height={40}
         />
+        <h1 className="text-2xl font-bold text-purple-500">SimplifyEfforts</h1>
       </Link>
 
       <nav className="flex gap-2">
@@ -38,12 +39,17 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent className="sheet-content sm:w-64">
               <>
-                <Image
-                  src="/assets/images/logo-text.svg"
-                  alt="logo"
-                  width={152}
-                  height={23}
-                />
+                <div className="flex items-center gap-2">
+                  <Image
+                    src="/assets/images/logo.png"
+                    alt="logo"
+                    width={40}
+                    height={40}
+                  />
+                  <h1 className="text-xl font-bold text-purple-500">
+                    SimplifyEfforts
+                  </h1>
+                </div>
 
                 <ul className="header-nav_elements">
                   {navLinks.map((link) => {
@@ -51,24 +57,24 @@ const MobileNav = () => {
 
                     return (
                       <li
-                        className={`${
-                          isActive && "gradient-text"
-                        } p-18 flex whitespace-nowrap text-dark-700`}
-                        key={link.route}
+                      className={`${isActive && "gradient-text"} p-18 flex whitespace-nowrap text-dark-700`}
+                      key={link.route}
+                    >
+                      <Link
+                        className="sidebar-link cursor-pointer"
+                        href={link.route}
+                        style={{ backgroundColor: link.bgColor, display: 'flex', alignItems: 'center' }}
                       >
-                        <Link
-                          className="sidebar-link cursor-pointer"
-                          href={link.route}
-                        >
-                          <Image
-                            src={link.icon}
-                            alt="logo"
-                            width={24}
-                            height={24}
-                          />
-                          {link.label}
-                        </Link>
-                      </li>
+                        <Image
+                          src={link.icon}
+                          alt="logo"
+                          width={30}
+                          height={24}
+                          className="rounded-md p-1"
+                        />
+                        {link.label}
+                      </Link>
+                    </li>
                     );
                   })}
                 </ul>
