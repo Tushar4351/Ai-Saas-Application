@@ -377,3 +377,11 @@ html {
   color: #ffffff;
   transition: all 0.3s ease-in-out;
 }
+
+.home-nav {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-button {
+  transition: top 0.3s ease-in-out;
+}
